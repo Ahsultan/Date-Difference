@@ -2,7 +2,6 @@
 let submit = document.getElementById("submit");
 let output = document.getElementById("output");
 let month = document.getElementById("month");
-let years = document.getElementById("years");
 
 submit.addEventListener("click", () => {
   //Create a Date object from input value
@@ -20,10 +19,8 @@ submit.addEventListener("click", () => {
     //We want the difference to be a non-negative number. Hence we use Math.abs()
     let dayDifference = Math.abs(timeDifference / (1000 * 3600 * 24));
     let mon = Math.abs(Math.round(timeDifference/(1000 * 60*60*24*7*4)));
-    let year = Math.abs(Math.round(timeDifference/(1000 * 60 * 60 * 24)) / 365);
     output.innerHTML = `Difference between the two dates is <span>${dayDifference}</span> days`;
     month.innerHTML = `Difference between the two dates in Months is <span>${mon}</span> months`;
-    years.innerHTML = `Difference between the two dates in Years is <span>${year}</span> year`;
   }
 
   //Else display that the input is valid
