@@ -6,12 +6,11 @@
   }
   body {
     height: 100vh;
-    background: linear-gradient(#3dcf49 50%, #2e0a26 50%);
   }
   .container {
     width: 90vw;
     max-width: 37.5em;
-    background-color: #242831;
+    background-color: #3a0159;
     padding: 6em 3em;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -29,8 +28,8 @@
     font-weight: 600;
   }
   input[type="date"] {
-    font-size: 16px;
-    padding: 1em;
+    font-size: 12px;
+    padding: 8px;
     color: #242831;
     border: none;
     outline: none;
@@ -38,16 +37,16 @@
     margin-top: 0.6em;
   }
   ::-webkit-calendar-picker-indicator {
-    background-color: #18f08b;
+    background-color: #202522;
     padding: 0.2em;
     cursor: pointer;
     border-radius: 0.1em;
   }
   button {
     display: block;
-    background-color: #18f08b;
+    background-color: #f0f6f3;
     color: #16191e;
-    font-size: 18px;
+    font-size: 16px;
     margin: 1em auto 2em auto;
     border: none;
     padding: 0.7em 2em;
@@ -64,7 +63,7 @@
     letter-spacing: 0.05em;
   }
   #output span {
-    color: #18f08b;
+    color: #0bc6e7;
     font-size: 1.4em;
     font-weight: 600;
   }
